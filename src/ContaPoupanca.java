@@ -7,7 +7,13 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupan�a ===");
+		System.out.println("=== Extrato Conta Poupan�a ===");
 		super.imprimirInfosComuns();
+	}
+
+	@Override
+	public void solicitarEmprestimo(){
+		System.out.println("Não existe emprestimo disponível, mantém os seus dados atualizado!");
+	
 	}
 }
